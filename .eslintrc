@@ -1,6 +1,6 @@
 {
   // Configuration for JavaScript files
-  "extends": ["plugin:prettier/recommended"],
+  "extends": ["airbnb-base", "plugin:prettier/recommended"],
   "rules": {
     "prettier/prettier": [
       "error",
@@ -9,12 +9,16 @@
       }
     ]
   },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
   "overrides": [
     // Configuration for TypeScript files
     {
-      "files": ["**/*.ts", "**/*.tsx"],
+      "files": ["**/*.ts"],
       "plugins": ["@typescript-eslint", "unused-imports"],
-      "extends": ["plugin:prettier/recommended"],
+      "extends": ["airbnb-typescript/base", "plugin:prettier/recommended"],
       "parserOptions": {
         "project": "./tsconfig.json"
       },
