@@ -1,3 +1,6 @@
+/**
+ * Rutas para el modulo de TopSecret
+ */
 import { Router } from 'express';
 
 import { TopSecretController } from '../controllers/topsecret';

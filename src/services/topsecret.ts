@@ -9,6 +9,11 @@ import { Vector } from '../interfaces/vector';
 
 export class TopsecretService {
 
+  /**
+   * Determinar el mensaje y la posición de la nave
+   * @param data Body de la solicitud
+   * @returns Retorna un objeto con la posición y el mensaje
+   */
   public static getTopSecret(data: TopSecretPostDto): ResultTopSecret {
     const satellites: Satelite[] = [];
     const messages: Record<any, string[]> = {
@@ -39,7 +44,11 @@ export class TopsecretService {
   }
 }
 
+/**
+ * Verificar si la posición es válida
+ * @param position Posición a verificar
+ */
 function validatePosition(position: Vector | undefined): void {
   if (!position) throw new NotFoundError('No position found');
-  if (isNaN(position.x) || isNaN(position.y)) throw new NotFoundError('No position found');
+  if (Number.isNaN(position.x) || Number.isNaN(position.y)) throw new NotFoundError('No position found');
 }

@@ -1,8 +1,8 @@
-### Requirements
+### Requisitos
 
 - Node.js and npm
 
-### Getting started
+### Empezando
 
 Run the following command on your local environment:
 

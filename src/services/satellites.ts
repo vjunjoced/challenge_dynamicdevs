@@ -1,5 +1,8 @@
 import { Satelite } from '../interfaces/satelite';
 
+/**
+ * Se guardar la informacion de los satelites
+ */
 export class DataSatellites {
   private kenobi: Satelite = {
     name: 'kenobi',
@@ -37,10 +40,18 @@ export class DataSatellites {
     return DataSatellites.instance;
   }
 
+  /**
+   * 
+   * @param name Obtener un satelite por nombre
+   * @returns 
+   */
   public getSatelite(name: string): Satelite | undefined {
     return this.satellites.find(s => s.name === name);
   }
 
+  /**
+   * Obtener todos los satelites
+   */
   public getSatellites(): Satelite[] {
     return this.satellites;
   }

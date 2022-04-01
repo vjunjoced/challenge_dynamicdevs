@@ -1,3 +1,10 @@
+/**
+ * Funcion que se encarga de determinar el mensaje segun la informacion obtenida por cada uno de los satélites
+ * @param kenobi 
+ * @param skywalker 
+ * @param sato 
+ * @returns Retorna el mensaje que envía la nave
+ */
 export function getMessage(kenobi: string[], skywalker: string[], sato: string[]): string | undefined {
 
   if (kenobi.length !== skywalker.length || kenobi.length !== sato.length) return undefined;
