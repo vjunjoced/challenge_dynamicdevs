@@ -1,5 +1,4 @@
 import { Satelite } from 'src/interfaces/satelite';
-
 import { Vector } from '../interfaces/vector';
 
 function sqr(a: number): number {
@@ -11,7 +10,7 @@ function sqr(a: number): number {
  * @param satellites Satelites para calcular la posición
  * @returns Retorna un Vector2D con la posicion x,y en la cual se encuentra la nave
  */
-export function calculatePosition(satellites: Satelite[]): Vector | undefined {
+export function getLocation(satellites: Satelite[]): Vector | undefined {
   if (!Array.isArray(satellites)) return undefined;
   if (satellites.length < 3) return undefined;
 

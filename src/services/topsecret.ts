@@ -2,7 +2,7 @@ import { ResultTopSecret } from "src/interfaces/resultTopSecret";
 import { TopSecretPostDto } from "src/interfaces/topSecretPost.dto";
 import { DataSatellites } from './satellites';
 import { Satelite } from '../interfaces/satelite';
-import { calculatePosition } from "src/libs/trilateration";
+import { getLocation } from "src/libs/trilateration";
 import { getMessage } from '../libs/calculateMessage';
 import { NotFoundError } from '../class/errorNotFound';
 import { Vector } from '../interfaces/vector';
@@ -34,7 +34,7 @@ export class TopsecretService {
       }
     })
 
-    const position = calculatePosition(satellites);
+    const position = getLocation(satellites);
     validatePosition(position);
 
     const message = getMessage(messages.kenobi || [], messages.skywalker || [], messages.sato || []);

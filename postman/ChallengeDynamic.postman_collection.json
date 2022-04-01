@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "a54d5f1a-125f-4f8e-a9d4-71e7f78cd37a",
+		"name": "ChallengeDynamic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "To secret",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "b221d9dbb083a7f33428d7c2a3c3198ae925614d70210e28716ccaa7cd4ddb79",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"satellites\": [\n    {\n      \"name\": \"kenobi\",\n      \"distance\": 100.0,\n      \"message\": [\n        \"this\",\n        \"\",\n        \"\",\n        \"message\",\n        \"\"\n      ]\n    },\n    {\n      \"name\": \"skywalker\",\n      \"distance\": 115.5,\n      \"message\": [\n        \"\",\n        \"is\",\n        \"\",\n        \"\",\n        \"secret\"\n      ]\n    },\n    {\n      \"name\": \"sato\",\n      \"distance\": 142.7,\n      \"message\": [\n        \"this\",\n        \"\",\n        \"a\",\n        \"\",\n        \"\"\n      ]\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://8iurlsxxc9.execute-api.us-east-1.amazonaws.com/topsecret/",
+					"protocol": "https",
+					"host": [
+						"8iurlsxxc9",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"topsecret",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

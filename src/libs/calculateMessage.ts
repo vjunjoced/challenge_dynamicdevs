@@ -1,5 +1,5 @@
 /**
- * Funcion que se encarga de determinar el mensaje segun la informacion obtenida por cada uno de los satélites
+ * Función que se encarga de determinar el mensaje segun la informacion obtenida por cada uno de los satélites
  * @param kenobi 
  * @param skywalker 
  * @param sato 
