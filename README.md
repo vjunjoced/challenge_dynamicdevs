@@ -67,6 +67,7 @@ Si ocurre algún error ya sea porque no se puede obtener la posición o no se pu
 
 - Node.js and npm
 - Serverless Framework (**Solo para producción**)
+- Postman
 
 ### Empezando
 
@@ -92,5 +93,11 @@ Puede implementar en producción con el siguiente comando:
 ```
 npm run deploy-prod
 ```
-Tenga en cuenta que necesitará tener configurado serverles framework ya que el servicio está desarrollado para correr en funciones lambda de aws
+Tenga en cuenta que necesitará tener configurado serverles framework ya que el servicio está desarrollado para ejecutarse en funciones lambda de aws
 [# Serverless Framework](https://www.serverless.com/framework/docs/getting-started)
+
+### Eliminar lambda de aws
+Para eliminar el proyecto de aws  lambda ejecutamos el siguiente comando.
+```
+npm run remove-prod
+```

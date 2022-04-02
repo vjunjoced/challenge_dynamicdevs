@@ -1,7 +1,7 @@
 import { ResultTopSecret } from "src/interfaces/resultTopSecret";
 import { TopSecretPostDto } from "src/interfaces/topSecretPost.dto";
 import { DataSatellites } from './satellites';
-import { Satelite } from '../interfaces/satelite';
+import { Satellite } from '../interfaces/satelite';
 import { getLocation } from "src/libs/trilateration";
 import { getMessage } from '../libs/calculateMessage';
 import { NotFoundError } from '../class/errorNotFound';
@@ -15,7 +15,7 @@ export class TopsecretService {
    * @returns Retorna un objeto con la posición y el mensaje
    */
   public static getTopSecret(data: TopSecretPostDto): ResultTopSecret {
-    const satellites: Satelite[] = [];
+    const satellites: Satellite[] = [];
     const messages: Record<any, string[]> = {
       kenobi: [],
       skywalker: [],
@@ -23,7 +23,7 @@ export class TopsecretService {
     }
 
     data.satellites.forEach(s => {
-      const st = DataSatellites.getInstance().getSatelite(s.name);
+      const st = DataSatellites.getInstance().getSatellite(s.name);
       messages[s.name] = s.message;
 
       if (st) {

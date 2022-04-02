@@ -7,7 +7,7 @@ import { ValidationError } from '../class/errorValidation';
 /**
  * Controlador para el módulo de TopSecret
  */
-export class TopSecretController {
+export class TopsecretController {
 
   /**
    * Función controlador que se encarga de recibir la solicitud, validar los datos y obtener la respuesta

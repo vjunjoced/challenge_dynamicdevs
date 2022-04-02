@@ -3,10 +3,10 @@
  */
 import { Router } from 'express';
 
-import { TopSecretController } from '../controllers/topsecret';
+import { TopsecretController } from '../controllers/topsecret';
 
 const router = Router();
 
-router.route('/').post([], TopSecretController.topSecret);
+router.route('/').post([], TopsecretController.topSecret);
 
 export default router;

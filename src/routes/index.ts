@@ -1,5 +1,6 @@
 import express from 'express';
-import routerToSecret from './topsecret'
+import routerToSecret from './topsecret';
+import routerTopsecretSplit from "./topsecretSplit";
 
 export class Router {
   /**
@@ -8,5 +9,6 @@ export class Router {
    */
   public static initializeRoutes(app: express.Express) {
     app.use('/topsecret', routerToSecret);
+    app.use('/topsecret_split', routerTopsecretSplit);
   }
 }

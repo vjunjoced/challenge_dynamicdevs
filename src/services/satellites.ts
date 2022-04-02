@@ -1,31 +1,31 @@
-import { Satelite } from '../interfaces/satelite';
+import { Satellite } from '../interfaces/satelite';
 
 /**
  * Se guardar la informacion de los satelites
  */
 export class DataSatellites {
-  private kenobi: Satelite = {
+  private kenobi: Satellite = {
     name: 'kenobi',
     position: {
       x: -500,
       y: -200
     }
   }
-  private skywalker: Satelite = {
+  private skywalker: Satellite = {
     name: 'skywalker',
     position: {
       x: 100,
       y: -100
     }
   }
-  private sato: Satelite = {
+  private sato: Satellite = {
     name: 'sato',
     position: {
       x: 500,
       y: 100
     }
   }
-  private satellites: Satelite[];
+  private satellites: Satellite[];
 
   constructor() {
     this.satellites = [this.kenobi, this.skywalker,this.sato]
@@ -45,14 +45,28 @@ export class DataSatellites {
    * @param name Obtener un satelite por nombre
    * @returns 
    */
-  public getSatelite(name: string): Satelite | undefined {
+  public getSatellite(name: string): Satellite | undefined {
     return this.satellites.find(s => s.name === name);
   }
 
   /**
    * Obtener todos los satelites
    */
-  public getSatellites(): Satelite[] {
+  public getSatellites(): Satellite[] {
     return this.satellites;
+  }
+
+  /**
+   * Guarda la información de la distancia y mensaje en un satélite
+   * @param name Nombre del satélite
+   * @param message Mensaje a guardar
+   * @param distance Distancia de la nave con el satélite
+   */
+  public setMessageAndDistance(name: string, message: string[], distance: number): void {
+    const satellite = this.getSatellite(name);
+    if (satellite) {
+      satellite.message = message;
+      satellite.distance = distance;
+    }
   }
 }

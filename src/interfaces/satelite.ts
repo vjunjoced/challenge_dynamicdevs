@@ -1,7 +1,8 @@
 import { Vector } from './vector';
 
-export interface Satelite {
+export interface Satellite {
   name: string;
   position: Vector;
   distance?: number;
+  message?: string[];
 }
