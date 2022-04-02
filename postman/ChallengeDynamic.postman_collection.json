@@ -42,6 +42,149 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "topsecret_split",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "b221d9dbb083a7f33428d7c2a3c3198ae925614d70210e28716ccaa7cd4ddb79",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://8iurlsxxc9.execute-api.us-east-1.amazonaws.com/topsecret_split/",
+					"protocol": "https",
+					"host": [
+						"8iurlsxxc9",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"topsecret_split",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Topsecret Split kenobi",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "b221d9dbb083a7f33428d7c2a3c3198ae925614d70210e28716ccaa7cd4ddb79",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"distance\": 100.0,\n    \"message\": [\"this\", \"\", \"\", \"message\", \"\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://8iurlsxxc9.execute-api.us-east-1.amazonaws.com/topsecret_split/kenobi",
+					"protocol": "https",
+					"host": [
+						"8iurlsxxc9",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"topsecret_split",
+						"kenobi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Topsecret Split skywalker",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "b221d9dbb083a7f33428d7c2a3c3198ae925614d70210e28716ccaa7cd4ddb79",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"distance\": 115.5,\n    \"message\": [\"\", \"is\", \"\", \"\", \"secret\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://8iurlsxxc9.execute-api.us-east-1.amazonaws.com/topsecret_split/skywalker",
+					"protocol": "https",
+					"host": [
+						"8iurlsxxc9",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"topsecret_split",
+						"skywalker"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Topsecret Split sato",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "b221d9dbb083a7f33428d7c2a3c3198ae925614d70210e28716ccaa7cd4ddb79",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"distance\": 142.7,\n    \"message\": [\"this\", \"\", \"a\", \"\", \"\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://8iurlsxxc9.execute-api.us-east-1.amazonaws.com/topsecret_split/sato",
+					"protocol": "https",
+					"host": [
+						"8iurlsxxc9",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"topsecret_split",
+						"sato"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
