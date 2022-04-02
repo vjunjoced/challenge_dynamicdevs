@@ -1,11 +1,11 @@
-import { ResultTopSecret } from "src/interfaces/resultTopSecret";
-import { TopSecretPostDto } from "src/interfaces/topSecretPost.dto";
 import { DataSatellites } from './satellites';
 import { Satellite } from '../interfaces/satelite';
-import { getLocation } from "src/libs/trilateration";
 import { getMessage } from '../libs/calculateMessage';
 import { NotFoundError } from '../class/errorNotFound';
-import { Vector } from '../interfaces/vector';
+import { TopSecretPostDto } from '../interfaces/topSecretPost.dto';
+import { ResultTopSecret } from '../interfaces/resultTopSecret';
+import { getLocation } from '../libs/trilateration';
+import { validatePosition } from '../utils/validatePosition';
 
 export class TopsecretService {
 
@@ -42,13 +42,4 @@ export class TopsecretService {
 
     return { position: position! , message };
   }
-}
-
-/**
- * Verificar si la posición es válida
- * @param position Posición a verificar
- */
-function validatePosition(position: Vector | undefined): void {
-  if (!position) throw new NotFoundError('No position found');
-  if (Number.isNaN(position.x) || Number.isNaN(position.y)) throw new NotFoundError('No position found');
 }

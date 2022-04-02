@@ -1,12 +1,12 @@
-import { ResultTopSecret } from "src/interfaces/resultTopSecret";
 import { DataSatellites } from './satellites';
 import { Satellite } from '../interfaces/satelite';
-import { getLocation } from "src/libs/trilateration";
 import { getMessage } from '../libs/calculateMessage';
 import { NotFoundError } from '../class/errorNotFound';
 import { validatePosition } from '../utils/validatePosition';
 import { TopSecretSplitPostDto } from '../interfaces/topsecretSplit.dto';
 import { DataBase } from '../db/index';
+import { ResultTopSecret } from '../interfaces/resultTopSecret';
+import { getLocation } from '../libs/trilateration';
 
 export class TopsecretSplitService {
 

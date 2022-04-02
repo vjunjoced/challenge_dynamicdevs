@@ -8,8 +8,6 @@ import { NextFunction, Request, Response } from 'express';
  * @param _next 
  */
 export function middlewareError(err: any, _req: Request, res: Response, _next: NextFunction) {
-  console.error(err.stack);
-  
   if (err.statusCode) {
     res.status(err.statusCode).json({
       error: err.message,

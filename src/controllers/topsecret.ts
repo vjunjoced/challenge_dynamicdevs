@@ -21,7 +21,7 @@ export class TopsecretController {
       // validate body
       if (!body.satellites) throw new ValidationError('satellites is required');
       if (!Array.isArray(body.satellites)) throw new ValidationError('satellites must be an array');
-  
+
       const result: ResultTopSecret = TopsecretService.getTopSecret(body);
       
       res.send(result);

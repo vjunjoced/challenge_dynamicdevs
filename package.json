@@ -10,7 +10,8 @@
     "clean": "rimraf dist .webpack .serverless",
     "lint": "eslint --ext .js,.ts .",
     "build-types": "tsc --noEmit --pretty",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "test": "jest"
   },
   "dependencies": {
     "express": "^4.17.3",
@@ -20,6 +21,7 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
+    "@types/jest": "^27.4.1",
     "@typescript-eslint/eslint-plugin": "^5.17.0",
     "@typescript-eslint/parser": "^5.17.0",
     "cross-env": "^7.0.3",
@@ -29,6 +31,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-unused-imports": "^2.0.0",
     "husky": "^7.0.4",
+    "jest": "^27.5.1",
     "lint-staged": "^12.3.7",
     "prettier": "^2.6.1",
     "rimraf": "^3.0.2",
@@ -36,6 +39,7 @@
     "serverless-bundle": "^5.3.0",
     "serverless-dotenv-plugin": "^3.12.2",
     "serverless-offline": "^8.5.0",
+    "ts-jest": "^27.1.4",
     "typescript": "^4.6.3"
   },
   "author": "Ixartz (https://github.com/ixartz)"

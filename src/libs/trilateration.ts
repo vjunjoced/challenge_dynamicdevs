@@ -1,5 +1,5 @@
-import { Satellite } from 'src/interfaces/satelite';
 import { Vector } from '../interfaces/vector';
+import { Satellite } from '../interfaces/satelite';
 
 function sqr(a: number): number {
   return a ** 2;
