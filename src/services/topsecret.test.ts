@@ -32,7 +32,7 @@ describe("Test TopsecretService->getTopSecret", () => {
     mockLocation.mockReturnValue(undefined);
 
     try {
-      TopsecretService.getTopSecret(data)
+      expect(TopsecretService.getTopSecret(data))
     } catch (error: any) {
       expect(mockLocation).toHaveBeenCalledTimes(1);
       expect(mockLocation).toHaveBeenCalledWith(data.satellites);
@@ -55,7 +55,7 @@ describe("Test TopsecretService->getTopSecret", () => {
     mockMessage.mockReturnValue(undefined);
 
     try {
-      TopsecretService.getTopSecret(data)
+      expect(TopsecretService.getTopSecret(data))
     } catch (error: any) {
       expect(mockLocation).toHaveBeenCalledTimes(1);
       expect(mockLocation).toHaveBeenCalledWith(data.satellites);
