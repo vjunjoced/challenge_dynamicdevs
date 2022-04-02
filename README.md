@@ -80,7 +80,7 @@ Body:
 ```
 Method: GET
 URL: https://8iurlsxxc9.execute-api.us-east-1.amazonaws.com/topsecret_split/:satellite_name
-```Lambda
+```
 
 ##### Respuesta esperada
 ```
